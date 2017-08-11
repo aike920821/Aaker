@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    .father {
+         font:15px/1.5% "微软雅黑";
+    }
+    .son {
+        font-size: 25px;
+        text-decoration: line-through; /*删除线*/
+    }
+    </style>
+</head>
+<body>
+   <div class="father">
+       <div class="son">行高可以跟单位，也可以不跟单位。但是意义不一样。</div>
+   </div>
+
+   问题：
+
+     问： 如果父亲是  150%  或者是 1.5em   带有单位， 问 son 行高是多少？
+
+     答：  son 的行高是 22px         15px 乘以  150%     得到 22.5   css 没有小数宽度 就是22 
+
+     总结：  加上单位 父亲先计算 15*1.5     后把 22px 继承给孩子行高  是以父亲为基准
+
+
+     问： 如果父亲是  1.5 不带有单位， 问 son 行高是多少？
+ 
+     答：  son 的行高是 37px        25* 1.5 
+
+     总结：  不单位 父亲不计算，直接把 1.5 倍行高 继承给孩子 孩子再用自己的字号 乘以1.5  是以自己字号为基准
+</body>
+</html>
