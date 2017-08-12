@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    .letter {
+        letter-spacing: 15px; /*  字间距 */
+    }
+    .word {
+        word-spacing: 15px;  /*  单词间距  针对于英文 中文无效 */
+    }
+    .break {
+        width: 120px;
+        height: 100px;
+        border: 1px solid red;
+       /*  word-break: break-all; 允许英文单词 换行 */
+       word-break: keep-all;  /* 正常不换行， 除非遇到空格（全角半角） 就换行 */ 
+    }
+    .white {
+        white-space: pre; /*  预格式化 */
+    }
+    .nowrap {
+        width: 120px;
+        height: 100px;
+        border: 1px solid red;
+        white-space: nowrap;  /* 强制一行内显示   重点*/
+    }
+    </style>
+</head>
+<body>
+    <div class="letter">
+        letter-spacing属性用于定义字间距. 
+    </div>
+    <div class="word">
+        my name is biergaici! 对中文字符无效
+    </div>
+    <div class="break">
+        使用浏览器 默vertical认的 换行规则使用浏览器默认的换行规则  
+    </div>
+    <div class="white">
+        使     用HTML制作网页   时，不论源代码中有多少空格，在浏览器中只会显示一个字符的空白。
+    </div>
+    <div class="nowrap">
+        空格空行无效，强制文本不能换行，除非遇到换行标记 <br />
+    </div>
+</body>
+</html>
