@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;     /*  取消浏览器默认样式 */
+    }
+
+    ul {
+        list-style: none;   /* 取消列表  ul  ol 前面的默认样式 去掉前面的小点 */
+    }
+    .search {
+        width: 238px;
+        height: 294px;
+        border: 1px solid #D9E0EE;
+        border-top: 3px solid #FF8400;
+        margin: 100px;
+
+    }
+
+    .search h4 {
+        height: 35px;
+         /* 行高等于高度可以实现文字垂直居中 */
+        border-bottom: 1px solid #E3E6ED;
+        font: 14px/35px "微软雅黑";
+        padding-left: 12px; 
+         /* 这里的padding值并没有影响盒子大小，没有撑开盒子 
+
+            因为h4我们没有指定宽度, 继承了父亲的宽度，怎么不会撑开盒子
+
+         */
+    }
+
+    .img {
+        padding: 7px 12px 0 8px; 
+        border-bottom: 1px solid #E3E6ED;
+    }
+    .search a {
+        color: #666666;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 26px;
+
+    }
+    .search a:hover {
+        color:#f40;
+        text-decoration: underline;  
+    }
+    .list {
+        padding:7px 0 0 8px;
+    }
+
+    .search li {
+        background: url(images/square.png) no-repeat left center ;
+        padding-left: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="search">
+        <h4>搜索趣图</h4>
+
+
+        <div class="img">
+            <img src="images/img.gif" width="218" />
+            <ul>
+                <li><a href="#">GIF:又是段跨种族爱恋,这吻无法言语</a></li>
+            </ul>
+        </div>
+
+
+        <ul class="list">
+            <li><a href="#">量子传输突破:NASA首次用城市网络实现</a></li>
+            <li><a href="#">太空揭秘：遭遇太阳风暴，宇航员怎么</a></li>
+        </ul>
+    </div>
+</body>
+</html>

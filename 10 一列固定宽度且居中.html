@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+     * {
+        margin: 0;
+        padding: 0;   /* 清除内外边距 */
+     }
+
+    .top, .banner, .main, .footer {
+        width: 960px;
+        background-color: #eee;
+        border: 1px dashed #aaa;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        /* 如果出现样式冲突，根据层叠性，大的写前面，小的写后面 */
+    }
+    .top {
+        height: 80px;
+    }
+    .banner {
+        height: 50px;
+    }
+    .main {
+        height: 500px;
+    }
+    .footer {
+        height: 120px;
+    }
+    </style>
+</head>
+<body>
+    <div class="top">网页头部</div>
+    <div class="banner">广告条</div>
+    <div class="main">页面主体</div>
+    <div class="footer">页面底部</div>
+</body>
+</html>
