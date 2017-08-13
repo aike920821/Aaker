@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        var num  = 10;
+        var num2 = 20;
+        console.log(num+num2);
+        console.log(num-num2);
+        console.log(num*num2);   //  *  代表  ×
+        console.log(num/num2);   //  /  代表   ÷
+        console.log(5%2)   // 取余数    后面经常用来判断能不能整除 如果是0就能整除
+
+       //  这里针对于  +  有一个非常重要的口诀：     数值相加   字符相连
+       console.log("------------------------------");
+       console.log(1+2);
+       var txt1 = "你好";
+       var txt2 = "吗";
+       console.log(txt1 + txt2);    // 结果是就是  “你好吗”
+
+       console.log("你好"+2);  // 一个字符型 +  数值型   结果   你好2     还是相连  
+
+       // 只要有一个是字符型，+ 就会相连
+
+       var  re = "10";   // re 是字符型
+
+       console.log(re + "岁");   // 相连
+       console.log(re + 10);  //  一个字符型的 “10“ + 数值型的 10   结果是   1010
+
+       //  但是： -  *  /   等   不是  +    就可以参与运算
+
+       console.log( re - 5);    //  “10” 字符型的数据   如果是减去 乘 除 等  都会参与运算
+
+        // 结果是 5
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
