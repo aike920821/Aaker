@@ -1,0 +1,400 @@
+ li i {
+    width: 10px;
+    height: 7px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+ li s {
+    text-decoration: none;
+    width: 10px;
+    line-height: 15px;
+    position: absolute;
+    top: -7px;
+}
+
+ .red {
+     color: red;
+ }
+
+ /*快捷导航开始*/
+ .shortcut {
+     height: 30px;
+     background-color: #f1f1f1;
+ }
+
+ .shortcut .fl {
+     width: 70px;
+     height: 30px;
+     float: left;
+ }
+
+ .fl li {
+     line-height: 30px;
+
+ }
+
+ .fr {
+     float: right;
+ }
+
+ .fr li {
+     padding: 0 10px;
+     line-height: 30px;
+     float: left;
+     border-right: 1px solid #B9B9C8;
+ }
+
+ .fr li a {
+     text-decoration: none;
+ }
+
+ .fr .fr-l {
+     border: 0;
+ }
+
+ a .shoujitu {
+     width: 15px;
+     height: 20px;
+     display: inline-block;
+     margin-right: 5px;
+     vertical-align: middle;
+     background: url("../images/jd2015img.png") no-repeat 0 0;
+ }
+
+ a .shoujitu:hover {
+     background-position: 0 -25px;
+ }
+
+ .fr .right {
+     border: 0;
+ }
+ /*快捷导航结束*/
+
+ /*logo栏开始*/
+ .heard {
+     height: 100px;
+ }
+
+ .heard-l {
+     width: 360px;
+     height: 60px;
+     float: left;
+     padding: 20px;
+ }
+
+ .heard-l .tu  {
+     background: url("../images/logo.png") no-repeat;
+     width: 360px;
+     height: 60px;
+ }
+
+ .tu a {
+     width: 270px;
+     height: 60px;
+     background: url("../images/logo.png") no-repeat;
+     display: block;
+     text-indent: -999999em;
+ }
+
+ .heard-c {
+     width: 500px;
+     height: 40px;
+     float: left;
+     margin-top: 20px;
+ }
+
+ .heard-c input {
+     height: 28px;
+     width: 430px;
+     float: left;
+     outline: 0;
+     border: 2px solid #f00;
+     border-right: 0;
+     padding: 4px;
+ }
+
+ .heard-c button {
+     width: 58px;
+     height: 40px;
+     float: left;
+     border: 0;
+     background-color: #f00;
+ }
+ .heard-t {
+     width: 125px;
+     height: 17px;
+     float: right;
+     margin: 20px 10px;
+     padding: 8px 0;
+     border: 1px solid #A8A8B7;
+     position: relative;
+     background-color: #ECECFB;
+
+ }
+
+ .heard-t i {
+     background: url("../images/jd2015img.png") no-repeat 0 -59px;
+     width: 17px;
+     height: 15px;
+     display: inline-block;
+     float: left;
+     margin: 5px;
+
+ }
+
+ .heard-t a {
+     text-decoration: none;
+     vertical-align: middle;
+
+ }
+
+ .heard-t em {
+     font: 400 13px/13px simsun;
+     margin: 3px 5px;
+ }
+
+ .heard-t s {
+     width: 16px;
+     height: 14px;
+     line-height: 14px;
+     text-align: center;
+     top: -3px;
+     right: 15px;
+     background-color: #f00;
+     border-radius: 50% 50% 50% 0;
+     position: absolute;
+     text-decoration: none;
+     color: #fff;
+
+ }
+
+ .heard-b {
+     width: 500px;
+     height: 30px;
+
+     float: left;
+ }
+
+ .heard-b a {
+     font-size: 12px;
+     text-decoration: none;
+     padding-right: 5px;
+     line-height: 30px;
+     white-space: nowrap;
+ }
+
+ /*logo栏结束*/
+
+ /*红色导购栏开始*/
+ .commodity {
+     height: 44px;
+     border-bottom: 2px solid #B1191A;
+ }
+
+ .bbt .shang-t {
+     width: 210px;
+     height: 44px;
+     font-size: 16px;
+     font-weight: 400;
+     float: left;
+     background-color: #B1191A;
+ }
+
+ .bbt .commodity-r {
+     height: 44px;
+     line-height: 44px;
+     float: left;
+
+ }
+
+ .commodity-r a {
+     margin: 0 15px;
+     text-decoration: none;
+     font-size: 16px;
+     font-family: "微软雅黑";
+ }
+ .commodity-l {
+     height: 44px;
+     width: 210px;
+     float: left;
+ }
+
+ .shang-t a {
+     color: #fff;
+     line-height: 44px;
+     padding-left: 10px;
+ }
+
+ .shang-b {
+     width: 210px;
+     height: 512px;
+     background-color: #C81623;
+ }
+
+ .bottom-b {
+     width: 210px;
+     height: 30px;
+     overflow: hidden;
+ }
+
+ .bottom-b h3 a {
+     line-height: 30px;
+     float: left;
+     padding-left: 10px;
+     font-size: 14px;
+     font-weight: 400;
+     font-family: "微软雅黑";
+     color: #fff;
+
+ }
+
+ .bottom-b em {
+     width: 10px;
+     height: 10px;
+     float: right;
+     margin: 10px 10px 0 0;
+     color: #fff;
+     font-family: simsun;
+ }
+/*红色导购栏结束 */
+
+ /*多快好省开始*/
+ .losod {
+     height: 94px;
+     position: relative;
+     background-color: #F5F5F5;
+     margin-bottom: 25px;
+ }
+
+ .losod-1,.losod-2,.losod-3,.losod-4 {
+     width: 300px;
+     height: 54px;
+     left: 50%;
+     position: absolute;
+     margin-top: 20px;
+     margin-left: -600px;
+ }
+
+ .losod-2 {
+     margin-left: -300px;
+ }
+
+ .losod-3 {
+     margin-left: 0;
+ }
+
+ .losod-4 {
+     margin-left: 300px;
+ }
+
+
+ /*多快好省结束*/
+
+ /*购物指南开始*/
+ .nav {
+     height: 169px;
+ }
+
+ .nav dl {
+     width: 198px;
+     float: left;
+ }
+ .nav dt {
+     height: 30px;
+     font-size: 16px;
+     font-family: "微软雅黑";
+ }
+
+ .nav dd {
+     height: 20px;
+     font-size: 14px;
+ }
+
+ .nav dd a {
+     text-decoration: none;
+
+ }
+
+ .nav-r {
+     width: 203px;
+     height: 169px;
+     background: url(../images/jds.png) no-repeat 0 -131px;
+     float: right;
+ }
+
+ .nav-r h3 {
+     height: 30px;
+     font-size: 16px;
+     font-weight: 400;
+     font-family: "微软雅黑";
+ }
+
+ .nav-r p {
+     line-height: 20px;
+     margin-top: 10px;
+ }
+
+ .nav-r a {
+     height: 20px;
+     display: block;
+     text-decoration: none;
+     text-align: right;
+ }
+
+ /*购物指南结束*/
+
+ /*底部开始*/
+ .new {
+     border-top: 1px solid #ccc;
+     text-align: center;
+ }
+
+ .new-t {
+     margin: 23px 0 10px 0;
+ }
+
+ .new-t a {
+     text-decoration: none;
+     margin: 0 5px;
+ }
+
+ .new-c {
+     line-height: 20px;
+ }
+
+ .new-b {
+     height: 32px;
+     margin: 25px 0 40px 0;
+
+ }
+
+ .new-b a {
+     width: 103px;
+     height: 32px;
+     display: inline-block;
+     vertical-align: middle;
+     text-decoration: none;
+     font-size: 12px;
+     margin-right: 10px;
+ }
+
+ .new-b a img {
+     width: 20px;
+     height: 20px;
+     margin: 5px 5px 0 0;
+     float: left;
+ }
+
+ .new-b a span {
+     width: 60px;
+     height: 32px;
+     line-height: 16px;
+     float: left;
+ }
+
+ .new-b a .zzz {
+     line-height: 32px;
+ }
+ /*底部结束*/
