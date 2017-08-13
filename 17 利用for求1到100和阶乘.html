@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        // 1. 求 1 加到 100 和   利用for 实现累加的效果
+
+        //  1+ 2 + 3 + 4 + 5 ...+ 100   
+
+        var sum = 0;  // 用来存放累加的和 
+
+        for( var i = 1; i <= 100; i++) {
+
+            sum = sum + i;  //  累加     sum += i;  
+          //  console.log(sum);   写到for 里面的  不断的循环输出
+        }
+
+        console.log(sum);  // 5050
+
+
+        // 2. 求 1 到 100阶乘    1 * 2 * 3 * 4 ...* 99 * 100 
+
+        var factorial = 1;   //  用来存放阶乘的变量  jiecheng
+
+        for(var j = 1; j <= 10; j++ ) {
+
+            factorial = factorial * j ;  //  factorial *= j;   
+
+
+           }
+
+        console.log(factorial);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

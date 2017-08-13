@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+     //  1. 很多情况下，我们只写一个if 就ok啦
+       if(3<5) { 
+            alert("错误的");
+        }
+
+    // 2. else 后面千万不要加 条件表达式
+
+   if( 3<5 ) {
+        alert("hello");
+      }
+      else (3>5){   // 这里是错误的  else 后面不要加 条件表达式
+        alert("no hello");
+      }
+
+      // 3.表达式里面可以是判断表达式语句或者是布尔值等。
+
+     if( 3 + 5 ) {     // 3+5 = 8   8     if 会把 条件表达式转换为布尔值   8 是 true
+        alert("hello");
+      }
+
+      // 4.如果if和else 里面只有一句执行的话，可以省略花括号，否则一定要加上花括号。 建议大家还事都带上花括号啊
+      if ( 3 - 3 )  {
+         alert("hello"); // 这里只有一句 alert的话，按道理是可以省略的，但是我们习惯加上花括号
+      }
+      else {
+         alert("no hello");
+      }
+       
+      
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        // 把100个数分为 10行10列 最核心的 案例算法    每一行的最后一个数都能被10整除 
+
+        //  10  20  30 ... 100 都能被10 整除
+
+        // 转换为代码实现：  如果遇到 了能够被10整除的数 那我就应该在这数后面添加一个换行标签
+
+        // 否则 不能被 10 整除的 就正常输出 不换行
+
+        // 1. 简单写法
+
+        for (var i = 1; i<= 100; i++ ) {
+
+            if (i % 10  == 0) { // 这个用来判断是否能够被10整除
+
+                 document.write( i + "<br />" );   // 1 <br />
+            } else {
+
+               document.write( i + "&nbsp;" ); 
+
+            }
+
+        }
+
+         // 2. 完整写法
+         
+        for(var i = 1 ; i<=100; i++) {
+            if (i % 10 == 0) {
+
+                document.write( i + "<br />" ); 
+
+            } else if ( i < 10 ) {  // 1 2 3 4 5 6 7 8 9  我们需要补 0    01 02 03 。。 09
+
+                 document.write( "0" + i + "&nbsp;");  // 数字相加  字符相连
+
+            } else {
+
+                document.write( i + "&nbsp;");
+            }
+
+
+        }
+
+
+
+    </script> 
+</head>
+<body>
+    
+</body>
+</html>

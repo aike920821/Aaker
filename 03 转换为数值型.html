@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+
+    // 使用运算符方法转换数值型（隐式转换）
+        var txt = "10";
+        // var num = txt - 5;  利用运算符转换
+
+        var num = txt - 0; 
+
+        console.log(typeof num);  // 数值型的 10 
+
+        var num1 = txt * 1;
+
+        console.log(typeof num1,num1);  // 数值型的 10 
+
+    //  利用Number() 数据类型转换 （显示转换）
+
+        var re = "100";
+
+        var resu = Number(re); // 把re 转换为数值型  Number
+
+        console.log(typeof resu, resu);   //  number 100
+
+        var test =  "100岁";
+
+        var test1 = Number(test);
+
+        console.log(test1);  // NaN     number这个函数 返回的值就是 NaN
+
+    // 利用parseInt、 parseFloat 函数转换  ***** 
+
+       var par = "100";
+
+       var par1 = parseInt(par);  // 把par 转换为数值型
+
+       console.log(typeof par1,par1);  // number 100
+
+      var demo = "100岁";
+
+      var demo1 = parseInt(demo);
+
+      console.log(demo1);  //  返回的结果 100      把 岁给扔掉了     注意和 Number 函数的区别
+
+        console.log( parseInt("我100"));  // 要求 数字在前面才可以  这个返回的结果是 NaN 
+
+        console.log( parseInt("25.98"));  // 25  就是返回整数  小数直接略掉。
+
+        console.log( parseFloat("25.98"));  //  25.98
+        console.log( parseFloat("25.98中国人"));  //   25.98
+        console.log( parseFloat("中国人25.98"));  //  NaN
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

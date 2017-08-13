@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+
+       // 利用 运算符 隐式 转换
+        var num = 10;
+
+        var txt = num + "";  //  数值相加  字符相连
+
+        console.log(typeof txt, txt);
+
+        var age = 18;
+
+        var text = age + "岁";
+
+        console.log(typeof text);  // string
+
+
+        // String() 函数转换（显示转换）
+
+        var num1 = 10;
+        var re =  String(num1);
+        console.log(  re , typeof re  );
+
+        // toString()函数转换
+
+        var demo = 123;
+
+        var test = demo.toString();  // 把demo 转换为字符型   赋值给了 test 
+
+        console.log(typeof test);
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
