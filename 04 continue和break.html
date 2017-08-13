@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        // 1. 求 1~100 之间所有的偶数的和    2.4.6.8...100  相加
+
+        var sum  = 0; // 求和的变量
+
+        for(var i = 1; i <= 100; i++ ) {
+
+            if( i % 2 != 0 ) {  // 不能被2 整除 是 奇数
+
+                continue;  //  不执行循环剩下的语句  sum 不执行 而是 直接进行下一次循环 去 i++了
+
+            }
+
+            sum = sum + i;  //  求 1到100 只有偶数猜相加 所有和
+        }
+
+
+        // 2. 求出 200 ~ 300 之间第一个能够被 7整除的数
+
+
+        for (var i = 200; i<= 300; i++ ) {
+
+            if( i % 7 == 0 ) {
+
+                alert("能够被7整除的数是" + i);   // 先输出结果 在退出循环
+
+                break;  // 遇到break 直接退出循环  break 类似于 switch 写到语句的下面
+
+                 
+            }
+
+
+        }
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script type="text/javascript">
+        
+        // 求一个长方体的体积   s = 长 *  宽 * 高
+
+        var c = prompt("请您输入长度:");  
+        var w = prompt("请您输入宽度:");  
+        var h = prompt("请您输入高度:");  
+
+        function cuboid (a,b,c) {    // a b c 形参  我们自己定义
+
+            return  a * b * c;
+        }
+
+        var result = cuboid(c,w,h);  // c w h  实参 我们接受用户传递过来的
+
+        alert("经过科学计算，此长方体的体积是： " + result);
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
